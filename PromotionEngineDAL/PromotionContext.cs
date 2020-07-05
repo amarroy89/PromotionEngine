@@ -12,7 +12,7 @@ namespace PromotionEngineDAL
         //}
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-       => options.UseSqlite(@"Data Source=C:\Amar Doc\PromotionDB.db");
+       => options.UseSqlite(@"Data Source=C:\Amar Doc\PromotionDB.db");      
         public DbSet<Sku> Skus { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
     }
